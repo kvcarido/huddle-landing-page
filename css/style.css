@@ -1,0 +1,112 @@
+:root {
+  /* fonts */
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-open-sans: "Open Sans", sans-serif;
+
+  /* colors */
+  --clr-soft-magenta: hsl(300, 69%, 71%);
+  --clr-violet: hsl(257, 40%, 49%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* sizes */
+  --spacer: 1rem;
+  --h1: 2rem;
+  --vp-mobile: 23.43.75rem;
+  --vp-desktop: 90rem;
+}
+
+/*********/
+/* reset */
+/*********/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+ol[class],
+ul[class] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--ff-open-sans);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--clr-white);
+  min-height: 100vh;
+  background-color: var(--clr-violet);
+  background-image: url(/images/bg-mobile.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 40rem) {
+  body {
+    background-image: url(/images/bg-desktop.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+/*******************/
+/* utility classes */
+/*******************/
+
+.flow-content > * + * {
+  margin-top: var(--spacer);
+}
+
+.container {
+  padding: 0 var(--spacer);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+/******************/
+/* general layout */
+/******************/
+
+/*******************/
+/* general styling */
+/*******************/
+
+h1 {
+  font-family: var(--ff-poppins);
+  font-size: var(--h1);
+}
