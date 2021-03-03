@@ -68,14 +68,14 @@ body {
   color: var(--clr-white);
   min-height: 100vh;
   background-color: var(--clr-violet);
-  background-image: url(./images/bg-mobile.svg);
+  background-image: url(/huddle-landing-page/images/bg-mobile.svg);
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 40rem) {
   body {
-    background-image: url(./images/bg-desktop.svg);
+    background-image: url(/huddle-landing-page/images/bg-desktop.svg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
