@@ -11,6 +11,7 @@
   /* sizes */
   --spacer: 1rem;
   --dbl-spacer: 2rem;
+  --h1: 2.5rem;
   --triple-spacer: 3rem;
   --attribution: 0.75rem;
 
@@ -168,7 +169,13 @@ main {
 
 h1 {
   font-family: var(--ff-poppins);
-  font-size: var(--dbl-spacer);
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 40rem) {
+  h1 {
+    font-size: var(--h1);
+  }
 }
 
 button {
@@ -177,6 +184,7 @@ button {
   color: var(--clr-violet);
   border-radius: 2rem;
   padding: 0.75rem 6rem;
+  margin: 0 auto;
   cursor: pointer;
   transition: all 300ms;
 }
@@ -199,8 +207,21 @@ li:hover {
   border-bottom: 1px solid var(--clr-white);
 }
 
+.main-img {
+  display: flex;
+  align-items: center;
+}
+
 .main-text {
   text-align: center;
+  padding: var(--dbl-spacer);
+}
+
+@media screen and (min-width: 40rem) {
+  .main-text {
+    text-align: left;
+    padding: inherit;
+  }
 }
 
 .main-social__list {
